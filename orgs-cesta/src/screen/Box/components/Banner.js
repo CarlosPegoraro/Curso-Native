@@ -8,10 +8,10 @@ import banner from '../../../../assets/banner.png';
 
 const width = Dimensions.get('screen').width;
 
-export default function Banner() {
+export default function Banner({ title}) {
     return <>
         <Image source={banner} style={styles.banner}/>
-        <StyledText style={styles.title}>Detalhe da Cesta</StyledText>
+        <StyledText style={styles.title}>{title}</StyledText>
     </>
 }
 

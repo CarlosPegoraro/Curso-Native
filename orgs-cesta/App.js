@@ -1,5 +1,7 @@
 import React from 'react'
 import { StatusBar, SafeAreaView, View } from 'react-native';
+import AppLoading from 'expo-app-loading';
+
 import { Box } from './src/screen/Box/';
 
 import { 
@@ -8,6 +10,7 @@ import {
     Montserrat_700Bold 
   } from '@expo-google-fonts/montserrat';
 
+import mock from './src/mocks/Box';
 export default function App() {
 
   const [fontsLoaded] = useFonts({
@@ -16,12 +19,12 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return <View />
+    return <AppLoading />
   }
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1}}>
       <StatusBar/>
-      <Box/>
+      <Box {...mock}/>
     </SafeAreaView>
   );
 }

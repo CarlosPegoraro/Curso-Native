@@ -15,31 +15,31 @@ const manufactories = {
         {
             name: "Green",
             image: green,
-            distance: `${generateRandomNumber(1, 500)}m`,
+            distance: generateRandomNumber(1,500),
             starts: generateRandomNumber(1, 5),
         },
         {
             name: "Salad",
             image: salad,
-            distance: `${generateRandomNumber(1, 500)}m`,
+            distance: generateRandomNumber(1,500),
             starts: generateRandomNumber(1, 5),
         },
         {
             name: "Jenny Jack Farm",
             image: jennyJack,
-            distance: `${generateRandomNumber(1, 500)}m`,
+            distance: generateRandomNumber(1,500),
             starts: generateRandomNumber(1, 5),
         },
         {
             name: "Grow",
             image: grow,
-            distance: `${generateRandomNumber(1, 500)}m`,
+            distance: generateRandomNumber(1,500),
             starts: generateRandomNumber(1, 5),
         },
         {
             name: "Potager",
             image: potager,
-            distance: `${generateRandomNumber(1, 500)}m`,
+            distance: generateRandomNumber(1,500),
             starts: generateRandomNumber(1, 5),
         }
     ]

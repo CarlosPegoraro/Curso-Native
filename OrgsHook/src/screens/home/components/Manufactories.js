@@ -1,20 +1,13 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import { FlatList, Text, StyleSheet } from 'react-native';
 
-import manufactories from '../../../../mocks/manufactories';
-import { getManufactories } from '../../../services/loadingData';
+import useManufactories from '../../../hooks/UseManufactories';
+
+import Manufactor from './Manufactor';
 
 export default function Manufactories({banner: Banner}) {
-    const [title, setTitle] = useState('');
-    const [list, setList] = useState({});
 
-    useEffect(() => {
-        const texts = getManufactories();
-        setTitle(texts.title);
-        setList(texts.list);
-        console.log(texts)
-    }, [])
-
+    const [title, list] = useManufactories();
     const Title = () => {
         return <>
             <Banner />
@@ -23,7 +16,7 @@ export default function Manufactories({banner: Banner}) {
     }
     return <FlatList data={list} 
                 ListHeaderComponent={Title} 
-                renderItem={({ item: { name } }) => <Text>{name}</Text>}
+                renderItem={({ item }) => <Manufactor {...item} />}
                     keyExtractor={({name}) => name }
                 />;
 }

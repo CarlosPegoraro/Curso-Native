@@ -1,17 +1,15 @@
 {
   "expo": {
-    "name": "Gatito",
-    "slug": "gatito",
+    "name": "FerrariStore",
+    "slug": "FerrariStore",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logoFerrari.png",
+    "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/logoFerrari.png",
       "resizeMode": "contain",
-      "backgroundColor": "#A050BE"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
+      "backgroundColor": "#900000"
     },
     "assetBundlePatterns": [
       "**/*"

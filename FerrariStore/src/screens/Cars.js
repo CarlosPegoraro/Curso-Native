@@ -1,6 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, View } from "react-native";
+import Car from "../components/Car";
+import global from "../styles/global";
 
 export default function Cars() {
-    return <Text>Cars</Text>
+    return <View style={global.container}>
+        
+        <Car />
+    </View>
 }

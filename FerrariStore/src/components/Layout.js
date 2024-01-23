@@ -6,7 +6,7 @@ import pallet from '../styles/pallet';
 export default function Layout({ children }) {
   return <>
     <SafeAreaView style={styles.topBar}>
-        <StatusBar backgroundColor={pallet.black} />
+        <StatusBar backgroundColor="#900000ee" translucent={true} />
         <KeyboardAvoidingView 
         behavior={Platform.OS == "ios" ? "padding" : "height"}
         style={{ flex: 1 }}

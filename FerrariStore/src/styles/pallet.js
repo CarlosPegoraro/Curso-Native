@@ -4,5 +4,6 @@ export default pallet = {
     silver: "#C0C0C0",
     yellow: "#FFD100",
     white: "#FFFFFF",
+    text: "#302012",
     gray: "#808080",
 }
